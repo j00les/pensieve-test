@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const PORT = 3000;
 const cors = require("cors");
 
 app.use(cors());
@@ -14,6 +14,6 @@ app.get("/", async (req, res, next) => {
   }
 });
 
-app.listen(port, () => {
-  console.log("running in =>", port);
+app.listen(PORT, () => {
+  console.log("Running at =>", PORT);
 });
